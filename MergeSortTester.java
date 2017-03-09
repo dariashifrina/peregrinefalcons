@@ -1,31 +1,24 @@
-//Team Last -- Queenie Xiang, Henry Zheng, Rihui Zheng
-//APCS2 pd3
-//HW07 -- What Does the Data Say?
-//2017-02-15
-
 /*======================================
   class MergeSortTester
   ALGORITHM:
-  Make integer arrays containing different numbers of elements and find the runtime in nanoseconds it takes to sort these arrays with MergeSort.
   
   BIG-OH CLASSIFICATION OF ALGORITHM:
-  nlog(n)
   
   Mean execution times for dataset of size n:
   Batch size: <1000>
-  n=1       time:206
-  n=10      time: 11441
-  n=100     time: 40570
-  n=1000    time: 307898
-  n=10000   time: 3036661
-  n=100000  time: 33497709
-  n=1000000 time: 378249087
+  n=1       time:
+  n=10      time: 
+  n=100     time:
+  n=1000    time: 
+  n=10000   time: 
+  n=100000  time: 
+  n=1000000 time: 
 
   ANALYSIS:
-  After going through the execution times for various size datasets and graphing them, along with a "line of best fit", we conclude that the Big-Oh classification of MergeSort is nlog(n). According to our graph, the "line of best fit" was something along the lines of y=xlog(x). We hypothesized that this was true because the log(x) portion is the log base 2 of n of the splitting the deck in half algorithm and the scalar multiple coefficient of x is the scalar multiple of n of the number of times you have to sort.
+
   ======================================*/
 
-public class MergeSortTester 
+public class QuickSortTester 
 {
 
     /******************************
@@ -37,7 +30,7 @@ public class MergeSortTester
      ******************************/
     public static void main( String[] args ) 
     {
-	MergeSort bob = new MergeSort();
+	Quicksort bob = new Quicksort();
 
 	/*
 	  =======================
@@ -94,7 +87,7 @@ public class MergeSortTester
 	  =======================
 	*/
 	
-	System.out.println("Merge Sort:");
+	System.out.println("Quick Sort:");
 	long average = 0;
 	
 	for (int x = 0; x < 1000; x++){
