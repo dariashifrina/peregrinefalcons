@@ -1,24 +1,4 @@
-/*======================================
- class MergeSortTester
- ALGORITHM:
- 
- BIG-OH CLASSIFICATION OF ALGORITHM:
- 
- Mean execution times for dataset of size n:
- Batch size: <1000>
- n=1       time:
- n=10      time: 
- n=100     time:
- n=1000    time: 
- n=10000   time: 
- n=100000  time: 
- n=1000000 time: 
- 
- ANALYSIS:
- 
- ======================================*/
- 
- public class QuickSortTester 
+public class QuickSortTester 
  {
  
    /******************************
@@ -28,6 +8,7 @@
     *  We divided that time by 1000 to find the average amount of time it took for sort.
     *  We realized that a few outliers will not skew the data a lot due to having a good cushion number of 1000 tests for each array size.
     ******************************/
+     
    public static void main( String[] args ) 
    {
  	QuickSort bob = new QuickSort();

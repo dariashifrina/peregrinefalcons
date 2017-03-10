@@ -1,7 +1,3 @@
-/*Dasha Shifrina
-APCS2 pd3
-HW#15: So So Quick
-2017-03-08
 /*****************************************************
  * class QuickSort
  * Implements quicksort algo to sort an array of ints in place
@@ -10,11 +6,13 @@ HW#15: So So Quick
  * QSort(arr): The middle value of the range of the array that is being sorted is placed in its correct position, creating a partition. Then, the two regions on the side of the partition have the middle value placed in its correct position. This keeps going, breaking up the array in two regions every time, until the range of the unsorted region is 0. 
  *
  * 2a. Worst pivot choice / array state and associated runtime: 
- *If the pivot is at index 0. That would essentially not be splitting the array in half at all, because one array would have no elements and another would still have n-1 amount.
+ * If the pivot is at index 0. That would essentially not be splitting the array in half at all, because one array would have no elements and another would still have n-1 amount.
+ *
  * 2b. Best pivot choice / array state and associated runtime:
  *If the pivot is exactly in the middle because that creates 2 arrays of the same size, essentially splitting the array perfectly in half. 
+ *
  * 3. Approach to handling duplicate values in array:
- * Since the array always splits in two with every recursion, my algo works fine with duplicates although when it splits, one array has no elements and another has n-1 elements.
+ * Since the array always splits in two with every recursion, our algo works fine with duplicates although when it splits, one array has no elements and another has n-1 elements.
  *****************************************************/
 
 /***
@@ -22,6 +20,7 @@ HW#15: So So Quick
     Once you have a working implementation, test against arrays 
     with duplicate values, and revise if necessary. (Backup first.)
  ***/
+
 public class QuickSort 
 {
     //--------------v  HELPER METHODS  v--------------
@@ -91,13 +90,6 @@ public class QuickSort
 	swap(ub,s,arr);
 	return s;
     }
-    // Thinkers are encouraged to roll their own subroutines.
-    // Insert your auxiliary helper methods here.
 
-
-    //main method for testing
-    public static void main( String[] args ) 
-      {
-    }//end main
 
 }//end class QuickSort
